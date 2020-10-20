@@ -19,7 +19,14 @@
   padding: 5px;
 }
 
+
+
 body {
+  min-height: 100%;
+  background-image: url(../images/Bloodsafe.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -154,4 +161,128 @@ body {
   .dropdown-content a {
     text-align: center;
   }
+}
+
+.nav ul {
+    float: left;
+    background-color: green;
+    padding: 0px;
+}
+
+.nav li {
+			float: left;
+			position: relative;
+			width: 150px;
+			list-style: none;
+	}
+
+.nav a {
+			display: block;
+			text-decoration: none;
+			padding: 5px 15px;
+			color: #000;
+}
+
+.nav ul ul {
+	position: absolute;
+	left: 0;
+	top: 100%;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.nav ul ul ul {
+	left: 100%;
+	top: 0;
+}
+
+.nav li:hover, .nav li:hover li {
+	background: #ddd;
+}
+
+.nav li li:hover, .nav li li:hover li {
+	background: #bbb;
+}
+
+.nav li li li:hover {
+	background: #999;
+}
+
+.nav li:hover > ul {
+	visibility: visible;
+	opacity: 1;
+}
+
+html {
+  min-height: 100%;
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  min-height: 100vh;
+}
+
+.header {
+  padding-bottom: 5rem;
+}
+
+.footer {
+  color: white;
+  background-color: rgba(0,0,0,0.7);
+  margin-top: 90px;
+  width: 100%;
+  padding: 50px;
+  position: absolute;
+  bottom: 0;
+  box-sizing: border-box;
+}
+
+.footer .footer-left {
+  width:35%;
+}
+
+.footer .footer-center {
+  width: 35%;
+}
+
+.footer .footer-right {
+  width: 20%;
+}
+
+.footer .footer-left, .footer .footer-center, .footer .footer-right{
+  display: inline-block;
+  vertical-align:top;
+}
+
+
+.footer .footer-center p {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.footer .footer-center  p span {
+  display: block;
+}
+
+.footer .footer-right span {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.footer .footer-right .footer-icons {
+  margin-top: 20px;
+}
+
+.footer .footer-right .footer-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 3px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 35px;
 }
