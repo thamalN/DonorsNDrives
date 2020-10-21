@@ -23,7 +23,7 @@
 
 body {
   min-height: 100%;
-  background-image: url(../images/Bloodsafe.jpg);
+  background-image: url(../images/back.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -163,56 +163,6 @@ body {
   }
 }
 
-.nav ul {
-    float: left;
-    background-color: green;
-    padding: 0px;
-}
-
-.nav li {
-			float: left;
-			position: relative;
-			width: 150px;
-			list-style: none;
-	}
-
-.nav a {
-			display: block;
-			text-decoration: none;
-			padding: 5px 15px;
-			color: #000;
-}
-
-.nav ul ul {
-	position: absolute;
-	left: 0;
-	top: 100%;
-	visibility: hidden;
-	opacity: 0;
-}
-
-.nav ul ul ul {
-	left: 100%;
-	top: 0;
-}
-
-.nav li:hover, .nav li:hover li {
-	background: #ddd;
-}
-
-.nav li li:hover, .nav li li:hover li {
-	background: #bbb;
-}
-
-.nav li li li:hover {
-	background: #999;
-}
-
-.nav li:hover > ul {
-	visibility: visible;
-	opacity: 1;
-}
-
 html {
   min-height: 100%;
   box-sizing: border-box;
@@ -225,6 +175,77 @@ html {
 
 .header {
   padding-bottom: 5rem;
+}
+
+.button button{
+  background-color: white;
+  width: 25%;
+  height: 60px;
+  margin:auto;
+  display: block;
+  font: inherit;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.button button:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-color: white;
+  color: white;
+}
+
+.docform label {
+  display: inline-block;
+}
+
+.docform input[type=text] {
+  padding: 10px;
+  width: 80%;
+}
+
+
+.docform input[type=submit] {
+  background-color: #ab1515;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+.row {
+  padding-left: 20px;
+}
+
+.row-button {
+  text-align: center;
+  margin: 10px auto;
+  width: 20%;
+}
+
+.docform input[type=submit]:hover {
+  background-color: white;
+  color: #ab1515;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row-label {
+    float: left;
+    width: 25%;
+    margin-top: 5px;
+}
+
+.row-field {
+  float: right;
+  width: 75%;
+  margin-top: 5px;
 }
 
 .footer {
