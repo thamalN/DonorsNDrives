@@ -23,7 +23,7 @@
 
 body {
   min-height: 100%;
-  background-image: url(../images/back.png);
+  background-image: url(../images/back2.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -200,12 +200,14 @@ html {
 }
 
 .docform input[type=text] {
+  font: inherit;
   padding: 10px;
   width: 80%;
 }
 
 
 .docform input[type=submit] {
+  font: inherit;
   background-color: #ab1515;
   color: white;
   padding: 12px 20px;
@@ -215,11 +217,11 @@ html {
 }
 
 
-.row {
+ .docform .row {
   padding-left: 20px;
 }
 
-.row-button {
+.docform .row-button {
   text-align: center;
   margin: 10px auto;
   width: 20%;
@@ -230,22 +232,84 @@ html {
   color: #ab1515;
 }
 
-.row:after {
+.docform .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-.row-label {
+.docform .row-label {
     float: left;
     width: 25%;
     margin-top: 5px;
 }
 
-.row-field {
+.docform .row-field {
   float: right;
   width: 75%;
   margin-top: 5px;
+}
+
+.docUsername {
+  margin-top: 10%;
+  text-align: center;
+}
+
+.docUsername .row {
+  margin: 10px;
+}
+
+.docUsername input[type=text], .docUsername input[type=password] {
+  font: inherit;
+  width: 25%;
+  padding: 10px;
+  font-style: italic;
+}
+
+.docUsername input[type=submit] {
+  font: inherit;
+  width: 8%;
+  background-color: #ab1515;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.docUsername input[type=submit]:hover {
+  background-color: white;
+  color: #ab1515;
+}
+
+.docsuccess {
+  background-color: white;
+  width: 50%;
+  margin: 5% auto 0px auto;
+  border-radius: 15px;
+}
+
+.docsuccess h1 {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.successButton button {
+  background-color: #ab1515;
+  color: white;
+  width: 8%;
+  height: 40px;
+  margin:auto;
+  display: block;
+  font: inherit;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.successButton button:hover {
+  background-color: white;
+  color: #ab1515;
 }
 
 .footer {
